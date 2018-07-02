@@ -14,3 +14,10 @@ The games router is the specifc router which has been created to manage the game
 
 4. Which of the games API routes does the front-end application consume (make requests to)?
 It makes requests to the delete(destroy API), and post request(create API)
+
+Extensions:
+1. What are we using the MongoDB Driver API for?
+It allows us to more easily and continuously connect our routes and server to the mongo database, allowing us to create our own API and store our own data in the Mongo db, whilst using the RESTFUL routes efficiently.
+
+2. Why do we need to use ObjectId from the MongoDB driver API?
+We use object ID as we know that every entry in our database collection will have unique ID, even if every other piece of data is similar. It means we can update, view, or delete the correct db object using our RESTFUL routes.
